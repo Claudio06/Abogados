@@ -30,7 +30,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  width:100%  ;
+  
 }
 .btnup {
   display: flex;
@@ -243,8 +243,9 @@ video {
   height: 300px;
 }
 .icono {
-  width: 64px;
-  height: 64px;
+  max-width:100%;
+  width: 20%;
+  height: auto;
 }
 .title-practica {
   margin-block: 1em;
