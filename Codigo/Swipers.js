@@ -12,6 +12,11 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    }
+  },
 
   // Navigation arrows
   navigation: {
@@ -25,10 +30,5 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    }}
-
-    }).init();
+  }
+  }).init();
