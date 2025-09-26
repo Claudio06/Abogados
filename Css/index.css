@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  scroll-behavior: smooth;
+  min-width: 320px;
+  font-family: "Sorts Mill Goudy", serif;
+
+  position: relative;
+}
+section {
+  display: flex;
+  margin-block: 8em;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #f8f7f2;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width:100%  ;
+}
+.btnup {
+  display: flex;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  right: 48px;
+  bottom: 48px;
+  z-index: 2;
+  padding: 0.5em;
+  background-color: #edb96f;
+  opacity: .7;
+  transition: opacity 0.1s ease;
+  display: none;
+  visibility: hidden;
+  }
+ .activo {
+  display: block;
+  visibility: visible;
+} #whatsaap{
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  left: 48px;
+  bottom: 100px;
+  z-index: 2;
+  transition: opacity 1s ease-in-out;
+  opacity: .3;
+} #whatsaap:hover{
+  transform: translateX(5px);
+  cursor: pointer;
+  opacity: 1;
+  
+}
+
+  .btnup:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: transparent;
+  border-bottom: 0.5px solid rgba(247, 245, 245, 0.8);
+  height: 80px;
+  z-index: 2;
+  position: relative;
+} 
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.list-nav-Bar {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+}
+.list-nav-Bar li a {
+  font-size: 1.4em;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+}
+.list-nav-Bar li a:hover {
+  color: #edb96f;
+  cursor: pointer;
+} #movil{
+display: none;
+visibility: visible;
+opacity:0;
+position: absolute;
+top: 1em;
+right : 1em;
+}
+
+.hero {
+background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: linear-gradient(
+      90deg,
+      rgba(43, 52, 70, 0.9) 0%,
+      rgba(43, 52, 70, 0.89) 50%,
+      rgba(43, 52, 70, 0.86) 100%
+    ),
+    url("../Imagenes/hero.jpg.webp") no-repeat fixed center/cover; */
+  height: 100dvh;
+  position: relative;
+  top: -150px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 3em;
+  backdrop-filter: brightness(0.6);
+}
+
+.title-hero {
+  margin-left: 1em;
+  font-size: 3em;
+  font-weight: 400;
+  color: #f8f7f2;
+  font-family: "Sorts Mill Goudy", serif;
+
+}
+.descripcion-hero {
+  margin-left: 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 40%;
+  color: #f8f7f2;
+}
+.btn-hero  , .btn-nav{
+  padding: 1.2em 2.1em;
+  margin-left: 3em;
+  font-weight: 700;
+  background-color: #edb96f;
+  border: none;
+  color: #e7e7e7;
+  transition: color 0.1s ease-in-out;
+}
+.btn-hero:hover {
+  background-color: #e7e7e7;
+  color: #edb96f;
+  cursor: pointer;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  gap: 2em;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: url("../Imagenes/fondoabout.png.webp") no-repeat scroll center/cover;
+  gap: 3em;
+} 
+video {
+  width: 500px;
+  height: 350px;
+}
+.aboutimg {
+
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  border-radius: 8px;
+}
+
+.about-info {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 3em;
+}
+.title-about {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1em;
+  font-family: "Sorts Mill Goudy", serif;
+
+}
+
+.txt-info {
+  line-height: 1.7em;
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 200;
+}
+.areas {
+  padding-block: 2em;
+  background: linear-gradient(
+      90deg,
+      rgba(43, 52, 70, 0.9) 0%,
+      rgba(43, 52, 70, 0.89) 50%,
+      rgba(43, 52, 70, 0.86) 100%
+    ),
+    url("../Imagenes/fondoarea.jpeg") no-repeat fixed top/cover;
+  gap: 3em;
+  align-items: start;
+}
+
+.practicas {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  width: 80%;
+}
+.practica {
+  padding: 1.5em;
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: start;
+  border: 1px solid #e7e7e7;
+  height: 300px;
+}
+.icono {
+  width: 64px;
+  height: 64px;
+}
+.title-practica {
+  margin-block: 1em;
+  color: #e7e7e7;
+  font-family: fuente;
+  font-size: 1.2em;
+}
+.descripcion-practica {
+  font-family: "Sorts Mill Goudy", serif;
+
+  text-align: start;
+  line-height: 1.6em;
+  color: #e7e7e7;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+
+details {
+  flex: 1 1 500px;
+  width: 100%;
+  flex-direction: row;
+}
+summary {
+  padding: 1.5em 2em;
+  background-color: #fae6ed;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+
+}
+summary:hover {
+  background-color: #edb96f;
+  cursor: grab;
+  color: #fae6ed;
+}
+summary::after:active {
+  background-color: #edb96f;
+  cursor: grab;
+  color: #fae6ed;
+}
+.txt_preg {
+  padding: 2em 1em;
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.1em;
+  background-color: #f2f2f2;
+  line-height: 1.6em;
+  font-family: "Sorts Mill Goudy", serif;
+
+}
+.testimonios{
+  padding-block: 2em;
+  background: linear-gradient(
+      90deg,
+      rgba(43, 52, 70, 0.9) 0%,
+      rgba(43, 52, 70, 0.89) 50%,
+      rgba(43, 52, 70, 0.86) 100%
+    ),
+    url("../Imagenes/fondotestimonios.jpg") no-repeat fixed center/cover;
+  gap: 3em;
+  align-items: center;
+}
+
+ .swiper {
+  width: 1000px;
+  height: 400px;
+  
+
+}
+.swiper-slide {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+} .swiper-slide img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+} .swiper-slide figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+   width: 500px;
+   margin: auto;
+
+
+} figure figcaption {
+  font-weight: 600;
+  color: #f5f5f5
+}
+.swiper-slide p {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #e7e7e7;
+  text-align: justify;
+  line-height: 1.6em;
+  padding: 3em;
+    font-family: "Sorts Mill Goudy", serif;
+
+}
+
+.swiper-button-prev , .swiper-button-next {
+  padding: 1.5em;
+  background-color: #edb96f;
+ border-radius:50%;
+ font-size: 10px;
+  display: grid;
+  place-items: center;
+  opacity: .7;
+  transition: opacity 0.3s ease;
+}  
+
+.contacto {
+  padding-top: 3em;
+  flex-direction: column;
+  align-items: start;
+  gap: 4em;
+  background: linear-gradient(
+      90deg,
+      rgba(43, 52, 70, 0.9) 0%,
+      rgba(43, 52, 70, 0.89) 50%,
+      rgba(43, 52, 70, 0.86) 100%
+    ),
+    url("../Imagenes/fondocontacto.jpg.webp") no-repeat fixed center/cover;
+    margin:0;
+}
+#contacto {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  background: url("../Imagenes/LAWYER+TEMPLATE+PATTERNS+\(8\).jpg") no-repeat fixed center/cover;
+
+}
+form {
+  flex: 1fr;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 600px;
+  max-width:100%;
+  padding: 5em;
+}
+
+form [type="text"],
+[type="email"],
+textarea {
+  border: none;
+  border-bottom: 2px solid #edb96f;
+  padding: 1.2em;
+  margin-bottom: 1em;
+  text-align: start;
+  font-size: 1em;
+  font-weight: 400;
+  width: 100%;
+}
+textarea {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.btn_formulario {
+  width: 45%;
+  margin-top: 1em;
+  background-color: #2b3446;
+  border: 2px solid #edb96f;
+  text-align: center;
+  padding: 1.5em 1em;
+  font-weight: 600;
+  font-size: 1em;
+  color: #e5e3df;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.btn_formulario:hover {
+  background-color: #edb96f;
+  color: #2b3446;
+  cursor: pointer;
+}
+.redes {
+  display: flex;
+  width: 160px;
+  gap: 1em;
+}
+.redes img {
+  width: 64px;
+  height: 64px;
+  color: #2b3446;
+}
+.infocontacto {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.info {
+  flex: 1fr;
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+  padding-block: 2em;
+  justify-content: center;
+  align-items: center;
+
+}
+.subtitle {
+}
+.title_contacto {
+  font-size: 1.5em;
+  color: #2662d8;
+  line-height: 1em;
+  font-weight: 400 ;
+  margin: auto;
+}
+.txt_contacto {
+  line-height: 1.7em;
+  font-size: 1.4em;
+  color: #000;
+  font-weight: 200;
+}
+
+.footer {
+  background-color: #2b3446;
+  padding: 3em;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 4em;
+}
+ 
+.infofooter {
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+gap: 2em;
+
+} .listfooter{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+
+} .listfooter li {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.listredes {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  row-gap: 3em;
+  justify-content: center;
+} 
+.listredes li {
+  margin-left: 2em;
+}
+.listredes li a img {
+  background-color: #edb96f;
+  padding: 0.5em;
+
+  transition: transform 0.3s ease;
+} .listredes li a img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+} 
+.txtcopy{
+  color: #e5e3df;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+
+
+
+@media (320px <= width <= 768px ){
+  #movil{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index:2;
+} .btnup{
+  width: 32px;
+  height: 32px;
+}
+#whatsaap{
+  width: 48px;
+  height: 48px;
+}
+
+.hero{
+  padding: 8em 0 2em 0;
+  justify-content: end;
+  align-items: start;
+
+  }
+.list-nav-Bar{
+  display: none;
+  visibility: hidden;
+  flex-direction: column;
+  column-gap: 3em;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #2b3446;
+  width: 50%;
+  height: 100dvh;
+  top: -500px;
+  right: 0;
+  font-weight: 700;
+  transition: width  0.3s  ease-in-out;
+} .activa{
+  top: 0;
+  display: flex;
+ visibility: visible;
+}
+.about {
+  width: 90%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+} .about-info{
+align-items: center;  
+ background: url("../Imagenes/fondoabout.png") no-repeat fixed center/cover;
+}
+.aboutimg{
+  width: 100%;
+  height: auto;
+}
+ iframe{
+  width: 100%;
+  height: auto;
+}
+ .swiper {
+  width: 100%;
+  height: 400px;
+}
+.swiper-button-prev , .swiper-button-next {
+font-size: 8px;
+  padding: 0.8em;
+
+}
+.contacto{
+  justify-content: center;
+  align-items: start;
+}
+.infocontacto{
+  background-color:transparent;
+  flex-direction: column;
+  font-size: 1.1em;
+} .txt_contacto{
+  text-align: center;
+  font-size: 1em;
+  color: #e5e3df;
+}
+#contacto{
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  color: #e5e3df;
+  background: none;
+} 
+.preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  max-width: 300px;
+}
+
+details {
+  flex: 1 1 auto;
+  width:auto;
+  flex-direction: column;
+}
+.footer{
+  gap: 0.5em;
+  font-size:1em ;
+
+}
+.infofooter{
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1em;
+}
+
+}
+
