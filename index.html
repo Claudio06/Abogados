@@ -5,8 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./Css/index.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  
+
+  <title>Abogados¬Asociados</title>
 </head>
 
 <body>
@@ -25,7 +30,8 @@
       <li><button class="btn-nav"><a href="">contact</a></button></li>
     </ul>
   </nav>
-  <header class="hero">
+  <header class="hero"  data-aos="fade-left"
+>
     <h2 class="title-hero">Lawyers You Can Trust.</h2>
     <p class="descripcion-hero">
       Legal Edge is a boutique law firm in Chicago dedicated to providing
@@ -35,7 +41,7 @@
     </p>
     <button class="btn-hero">Talk To A Lawyer</button>
   </header>
-  <section class="about">
+  <section class="about" data-aos="fade-up">
     <div class="about-info">
       <img src="/Imagenes/about.jpg.webp" alt="" class="aboutimg" />
     </div>
@@ -48,7 +54,7 @@
       </p>
     </div>
   </section>
-  <section class="areas">
+  <section class="areas" data-aos="fade-right">
     <h2 class="title-hero">How We Can Help.</h2>
     <div class="practicas">
       <figure class="practica">
@@ -85,7 +91,7 @@
       </figure>
     </div>
   </section>
-  <section class="about">
+  <section class="about" data-aos="fade-zoom">
     <div class="about-info">
      <img src="/Imagenes/about.jpg.webp" class="aboutimg" alt="">
     </div>
@@ -103,7 +109,7 @@
     <div class="preguntas" id="preguntas"></div>
   </section>
 
-  <section class="contacto">
+  <section class="contacto"  data-aos="fade-in">
     <h2 class="title-hero">Contact Us.</h2>
     <p class="descripcion-hero">
       If you have any questions about our services, we encourage you to get in
@@ -111,7 +117,7 @@
       Thank you for choosing Legal Edge, and we look forward to hearing from you.
     </p>
     <div id='contacto'>
-      <div class="infocontacto">
+      <div class="infocontacto" data-aos="fade-down-left">
         <div class="info">
           <h3 class="title-about">Legal Edge LLC</h3>
           <span class="txt_contacto">Nam ultrices ultrices nec tortor pulvinar esteras loremips est
@@ -130,7 +136,7 @@
         </div>
       </div>
 
-      <form action="https://formsubmit.co/claudio.ponti3@gmail.com" method="POST" target="index.html">
+      <form action="https://formsubmit.co/claudio.ponti3@gmail.com" method="POST" target="index.html" data-aos="fade-down-right">
         <h2 class="title_contacto">Contact Us</h2>
         <input type="text" name="nombre" id="nombre" placeholder="Enter your Name"
           pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,40}$" autocomplete="false" />
@@ -167,9 +173,9 @@
         </div>
         <div class="swiper-slide">
           <figure>
-            <img src="Imagenes/cliente3.jpg" alt="cliente">
-            <p></p>
-            <caption></caption>
+            <img src="Imagenes/cliente3.webp" alt="cliente">
+            <p>He probado varios gimnasios, pero este es el mejor. La variedad de clases y el ambiente son inigualables.</p>
+            <caption>Laura P.</caption>
           </figure>
         </div>
         <div class="swiper-slide">
@@ -218,6 +224,10 @@
   <script src="Codigo/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="Codigo/Swipers.js"></script>
+  <script src="Codigo/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 
 </body>
 
