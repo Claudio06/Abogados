@@ -70,16 +70,16 @@ const nav = () => {
   const movil = d.getElementById("movil"),
     // close = d.getElementById("close"),
     lista = d.querySelector(".list-nav-Bar");
-    // linkAll = d.querySelectorAll("ul li");
+    linkAll = d.querySelectorAll(".list-nav-Bar li");
   console.log(movil);
   movil.addEventListener("click", () => {
     lista.classList.toggle("activa");
   });
-  // linkAll.forEach((link) => {
-  //   link.addEventListener("click", () => {
-  //     lista.classList.remove("activa");
-  //   });
-  // });
+  linkAll.forEach((link) => {
+    link.addEventListener("click", () => {
+      lista.classList.remove("activa");
+    });
+  });
   // close.addEventListener("click", () => {
   //   lista.classList.remove("activa");
   // });
